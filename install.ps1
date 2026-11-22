@@ -63,6 +63,8 @@ New-Item -ItemType Directory -Path $installDir | Out-Null
 Write-Host "复制程序文件..." -ForegroundColor DarkGray
 Copy-Item -LiteralPath (Join-Path $sourceDir "app.py") -Destination $installDir
 Copy-Item -LiteralPath (Join-Path $sourceDir "README.md") -Destination $installDir
+Copy-Item -LiteralPath (Join-Path $sourceDir "LICENSE") -Destination $installDir
+Copy-Item -LiteralPath (Join-Path $sourceDir "CHANGELOG.md") -Destination $installDir
 Copy-Item -LiteralPath (Join-Path $sourceDir "requirements.txt") -Destination $installDir
 Copy-Item -LiteralPath (Join-Path $sourceDir "rijin") -Destination $installDir -Recurse
 Copy-Item -LiteralPath (Join-Path $sourceDir "assets") -Destination $installDir -Recurse
