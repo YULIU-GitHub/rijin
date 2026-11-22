@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local app data / generated files
+*.db
+*.db-wal
+*.db-shm
+*.log
+preview-data/
+tmp-*
+logs/
+
+# Build artifacts
+dist/
+build/
+*.spec
+
+# Screenshots outside docs
+*.png
+!assets/*.png
+!docs/*.png
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
